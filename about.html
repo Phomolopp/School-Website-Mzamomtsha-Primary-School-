@@ -6,9 +6,9 @@
     <title>About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="sub-header">
@@ -24,46 +24,41 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    <h1>About Us</h1>
+        <h1>About Us</h1>
     </section>
 
-<!---------About us content-->
-<section class="about-us">
-
-    <div class="row">
-        <div class="about-col">
-            <h1>Academic Excellence at Mzamomhle Primary School</h1>
-            <p>The Mzamomhle Primary School attracts and produces some of the country’s best students' minds, 
-                making it the first choice for many individuals seeking to pursue a high level education in the
-                 township location. Housed within our higest grades major subject such as: Physical Science, Pure Maths, 
-                 Accounting and Life Science. We are consistently trying to produce top student performers in the South 
-                 African Education and Mzamomtsha dominates with the highest matriculant graduates in the cape town townships.</p>
-            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+    <!---------About us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Academic Excellence at Mzamomhle Primary School</h1>
+                <p>The Mzamomhle Primary School attracts and produces some of the country’s best students' minds, 
+                    making it the first choice for many individuals seeking to pursue a high level education in the
+                    township location. Housed within our higest grades major subject such as: Physical Science, Pure Maths, 
+                    Accounting and Life Science. We are consistently trying to produce top student performers in the South 
+                    African Education and Mzamomtsha dominates with the highest matriculant graduates in the cape town townships.</p>
+                <a href="apply.html" class="hero-btn red-btn">APPLY NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="image/about.jfif" class="slideshow-image">
+            </div>
         </div>
-        <div class="about-col">
-            <img src="image/about.jpg">
-        </div>
-    </div>
+    </section>
 
-</section>
-
-
-<!---------footer-->
-
-<section class="footer">
-
-    <h4>About Us</h4>
-    <p>Mzamomtsha Primary School, nestled between Khayelitsha Township and Umfuleni Township in the Western Cape Province of South Africa, 
-        has been a pillar of education since its establishment. Under the leadership of Headmaster Mr. Simphiwe Khuze since 2007, our school 
-        has served the Drift Sands community with dedication and commitment. Originally designed for grades 1 to 7, our school has adapted to 
-        the rapid population growth by enrolling students up to grade 12. As Drift Sands evolved from an informal settlement into a thriving
-         township, Mzamomtsha Primary School played a vital role in supporting the local community. Despite facing challenges such as limited
-          classroom space, a lack of online presence, and staffing constraints, we remain steadfast in our mission to provide quality education
-           to our 700 learners. With a team of 20 dedicated teachers, we strive to create an environment where every student can learn, grow,
+    <!---------footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Mzamomtsha Primary School, nestled between Khayelitsha Township and Umfuleni Township in the Western Cape Province of South Africa, 
+            has been a pillar of education since its establishment. Under the leadership of Headmaster Mr. Simphiwe Khuze since 2007, our school 
+            has served the Drift Sands community with dedication and commitment. Originally designed for grades 1 to 7, our school has adapted to 
+            the rapid population growth by enrolling students up to grade 12. As Drift Sands evolved from an informal settlement into a thriving
+            township, Mzamomtsha Primary School played a vital role in supporting the local community. Despite facing challenges such as limited
+            classroom space, a lack of online presence, and staffing constraints, we remain steadfast in our mission to provide quality education
+            to our 700 learners. With a team of 20 dedicated teachers, we strive to create an environment where every student can learn, grow,
             and succeed. At Mzamomtsha Primary School, we are committed to shaping the future of our community by empowering our students with
-             the knowledge and skills they need to thrive in an ever-changing world. Join us on our journey of education and transformation.
+            the knowledge and skills they need to thrive in an ever-changing world. Join us on our journey of education and transformation.
         </p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
@@ -72,22 +67,20 @@
             <i class="fa fa-whatsapp"></i>
         </div>
         <p>Made with <i class="fa fa-heart-o "></i> by Code Busters</p>
+    </section>
 
-</section>
+    <!----------JavaScript for Toggle Menu and Slideshow---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
 
+        
 
-
-
-<!----------JavaScript for Tpggle Menu---------->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    }
-</script>
-
+    </script>
 </body>
 </html>
