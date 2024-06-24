@@ -140,7 +140,7 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #f6f2f2;
+    background: #f1f1f1;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -153,11 +153,10 @@ h3{
     margin: 10px 0;
 }
 .course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(230, 4, 4, 0.2);
-    color: rgb(33, 192, 192);
-    .h3{
-        color: aquamarine;
-    }
+    box-shadow: 0 0 20px 0px rgba(10, 1, 1, 0.5);
+    color: rgb(128, 223, 223);
+    transform: scale(1.1); 
+    background-color: #fffdfd;
 }
 @media(max-width: 700px){
     .row{
@@ -193,7 +192,8 @@ h3{
     transition: 0.9s;
 }
 .layer:hover{
-    background: rgba(20, 5, 235, 0.7);
+    background: rgba(240, 37, 37, 0.7);
+    color: WHITE;
 }
 .layer h3{
     width: 100%;
@@ -210,6 +210,10 @@ h3{
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+    color: #fff;
+}
+.layer:hover p{
+    color: #fff;
 }
 .facilities{
     width: 80%;
@@ -254,10 +258,15 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #faf3f3;
     padding: 25px;
     cursor: pointer;
     display: flex;
+    transition: transform 0.5s ease;
+}
+.testimonials-col:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 20px 0px rgba(10, 1, 1, 0.5);
 }
 .testimonials-col img{
     height: 40px;
@@ -271,6 +280,7 @@ h3{
 .testimonials-col H3{
     margin-top: 15px;
     text-align: left;
+    color: #f44336;
 }
 .testimonials-col .fa{
     color: #f44336;
@@ -292,6 +302,11 @@ h3{
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    transition: transform 0.5s ease;
+}
+.cta:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0px rgba(10, 1, 5, 5);
 }
 .cta h1{
     color: wheat;
@@ -347,8 +362,14 @@ h3{
     flex-basis: 48%;
     padding: 30px 2px;
 }
+.about-col img:hover{
+    transform: scale(1.05);
+    border-radius: 5px;
+}
 .about-col img{
     width: 100%;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
 }
 .about-col h1{
     padding-top: 0;
@@ -382,7 +403,7 @@ h3{
     margin: 30px 0;
 }
 .blog-left p{
-    color: #999;
+    color: #030303;
     padding: 0;
 }
 .blog-right{
@@ -458,4 +479,127 @@ h3{
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+
+
+/* apply form*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6f4f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit and Back Buttons */
+input[type="submit"], .back-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: calc(50% - 10px); /* Make buttons side by side */
+}
+
+input[type="submit"]:hover, .back-button:hover {
+    background-color: #45a049;
+}
+
+.back-button {
+    background-color: #f44336;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hidden Message Styling */
+/* .hidden1 {
+    display: none;
+} */
+#message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Other Styles */
+.contact-col form {
+    margin-top: 20px;
+}
+
+.contact-col form input, .contact-col form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-col form button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-col form button:hover {
+    background-color: #d32f2f;
 }
