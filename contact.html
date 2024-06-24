@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="sub-header">
         <nav>
             <a href="index.html"><img src="image/logo.png" width="70" height="100"></a>
-            <div class="nav-links" id ="navLinks">
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -24,74 +24,67 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    <h1>Contact Us</h1>
+        <h1>Contact Us</h1>
     </section>
 
-<!---Contact Us-->
-<section class="location">
+    <!-- Contact Us -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13230.176619347156!2d18.647863457116703!3d-34.004240698106706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4f10cee25b65%3A0x67a6a93df747dbac!2sMzamomtsha%20Primary!5e0!3m2!1sen!2sza!4v1717485951365!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </section>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.941390773072!2d28.006540644646247!3d-26.1746188779664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512955411779f%3A0x6d9ee7c7cb5438e2!2sGauteng!5e0!3m2!1sen!2sza!4v1714483339342!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-</section>
-
-
-<section class="contact-us">
-    <div class="row">
-        <div class="contact-col">
-            <div>
-                <i class="fa fa-home"></i>
-                <span>
-                    <h5>Mfuleni, Cape Town, 7100</h5>
-                    <p>South Africa</p>
-                </span>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Drift Sands, Western Cape Province</h5>
+                        <p>South Africa</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>021 901 0008</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Mzamomtsha@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
             </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <span>
-                    <h5>021 901 0008</h5>
-                    <p>Monday to Saturday, 10AM to 6PM</p>
-                </span>
-            </div>
-            <div>
-                <i class="fa fa-envelope-o"></i>
-                <span>
-                    <h5>Mzamomtsha@school.com</h5>
-                    <p>Email us your query</p>
-                </span>
+            <div class="contact-col">
+                <form id="contactForm">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <textarea rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+                <div id="message">
+                    Your message has been sent.
+                </div>
             </div>
         </div>
-        <div class="contact-col">
-            <form action="">
-                <input type="text" placeholder="Enter your name" required>
-                <input type="email" placeholder="Enter your email address" required>
-                <input type="text" placeholder="Enter your Grade[Grade-10/Grade-11/Grade-12]" required>
-                <input type="text" placeholder="Enter your campus[Polokwane/Pretoria/Johannesburg]" required>
-                <textarea rows="8" placeholder="Message"></textarea>
-                <button type="submit" class="hero-btn red-btn">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-<!---------footer-->
-
-<section class="footer">
-
-    <h4>About Us</h4>
-    <p>Mzamomtsha Primary School, nestled between Khayelitsha Township and Umfuleni Township in the Western Cape Province 
-        of South Africa, has been a pillar of education since its establishment. Under the leadership of Headmaster Mr. 
-        Simphiwe Khuze since 2007, our school has served the Drift Sands community with dedication and commitment. 
-        Originally designed for grades 1 to 7, our school has adapted to the rapid population growth by enrolling
-         students up to grade 12. As Drift Sands evolved from an informal settlement into a thriving township, Mzamomtsha Primary School
-          played a vital role in supporting the local community. Despite facing challenges such as limited classroom space, a lack of online 
-          presence, and staffing constraints, we remain steadfast in our mission to provide quality education to our 700 learners.
-           With a team of 20 dedicated teachers, we strive to create an environment where every student can learn, grow, and succeed. 
-           At Mzamomtsha Primary School, we are committed to shaping the future of our community by empowering our students with the
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Mzamomtsha Primary School, nestled between Khayelitsha Township and Umfuleni Township in the Western Cape Province 
+            of South Africa, has been a pillar of education since its establishment. Under the leadership of Headmaster Mr. 
+            Simphiwe Khuze since 2007, our school has served the Drift Sands community with dedication and commitment. 
+            Originally designed for grades 1 to 7, our school has adapted to the rapid population growth by enrolling
+            students up to grade 12. As Drift Sands evolved from an informal settlement into a thriving township, Mzamomtsha Primary School
+            played a vital role in supporting the local community. Despite facing challenges such as limited classroom space, a lack of online 
+            presence, and staffing constraints, we remain steadfast in our mission to provide quality education to our 700 learners.
+            With a team of 20 dedicated teachers, we strive to create an environment where every student can learn, grow, and succeed. 
+            At Mzamomtsha Primary School, we are committed to shaping the future of our community by empowering our students with the
             knowledge and skills they need to thrive in an ever-changing world. Join us on our journey of education and transformation.
         </p>
         <div class="icons">
@@ -100,23 +93,42 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-whatsapp"></i>
         </div>
-        <p>Made with <i class="fa fa-heart-o "></i> by Code Busters</p>
+        <p>Made with <i class="fa fa-heart-o"></i> by Code Busters</p>
+    </section>
 
-</section>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
 
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission by default
 
+    // Display the message
+    document.getElementById('message').classList.remove('hidden');
 
+    // Hide the message after 5 seconds
 
-<!----------JavaScript for Tpggle Menu---------->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    }
-</script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var messageDiv = document.getElementById('message');
+            messageDiv.style.display = 'block'; // Show the message
 
+            // Hide the message after 5 seconds (5000 milliseconds)
+            setTimeout(function() {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        });
+
+});
+
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
