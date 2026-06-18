@@ -1,6 +1,8 @@
-document.getElementById('applicationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+var applicationForm = document.getElementById('applicationForm');
 
-    // Redirect to the confirmation page
-    window.location.href = 'confirmation.html';
-});
+if (applicationForm) {
+    applicationForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        window.location.href = 'confirmation.html';
+    });
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="image/logo.png" width="70" height="100"></a>
             <div class="nav-links" id ="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu">&times;</i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu">&#9776;</i>
         </nav>
         
         <h1>Grades We Offer</h1>
@@ -32,7 +32,7 @@
 
     <p>At our school, we offer a comprehensive range of grade levels designed to cater to the diverse educational needs of our students. <br>
          Our structured and progressive curriculum aims to foster academic excellence, critical thinking, and personal growth at each stage of a student's development. <br>
-          Here’s an overview of the grades we offer:</p>
+          Here's an overview of the grades we offer:</p>
 
     <p>In elementary school, we build on the foundational skills established in early childhood. <br>
          Our curriculum emphasizes core subjects such as reading, writing, mathematics, science, and social studies</p>
@@ -150,7 +150,7 @@
                 Isixhosa,
                 English,
                 Agricultural Sciences,
-                Ecomomics,
+                Economics,
                 Business Studies
                 Life Orientation</p>
         </div>
@@ -167,7 +167,7 @@
                 Isixhosa,
                 English,
                 Agricultural Sciences,
-                Ecomomics,
+                Economics,
                 Business Studies
                 Life Orientation</p>
         </div>
@@ -183,7 +183,7 @@
                 Isixhosa,
                 English,
                 Agricultural Sciences,
-                Ecomomics,
+                Economics,
                 Business Studies
                 Life Orientation</p>
             </p>
@@ -213,16 +213,17 @@
 
 
 
-<!----------JavaScript for Tpggle Menu---------->
+<!----------JavaScript for Toggle Menu---------->
 <script>
     var navLinks = document.getElementById("navLinks");
     function showMenu(){
         navLinks.style.right = "0"
     }
     function hideMenu(){
-        navLinks.style.right = "-200px"
+        navLinks.style.right = "-280px"
     }
 </script>
 
 </body>
 </html>
+

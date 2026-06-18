@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="image/logo.png" width="70" height="100"></a>
             <div class="nav-links" id ="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu">&times;</i>
                 <ul>
                     <li><a href="index.html" >HOME</a></li>
                     <li><a href="about.html"style="color: rgb(252, 16, 8);">ABOUT US</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu">&#9776;</i>
         </nav>
         <h1>About Us</h1>
         <p>Mzamomtsha Primary School, nestled between Khayelitsha Township and Umfuleni Township in the Western Cape Province of South Africa, 
@@ -44,15 +44,15 @@
         <div class="row">
             <div class="about-col">
                 <h1>Academic Excellence at Mzamomtsha Primary School</h1>
-                <p>The Mzamomtsha Primary School attracts and produces some of the country’s best students' minds, 
+                <p>The Mzamomtsha Primary School attracts and produces some of the country's best students' minds, 
                     making it the first choice for many individuals seeking to pursue a high level education in the
-                    township location. Housed within our higest grades major subject such as: Physical Science, Pure Maths, 
+                    township location. Housed within our highest grades major subjects such as: Physical Science, Pure Maths, 
                     Accounting and Life Science. We are consistently trying to produce top student performers in the South 
                     African Education and Mzamomtsha dominates with the highest matriculant graduates in the cape town townships.</p>
                 <a href="apply.html" class="hero-btn red-btn">APPLY NOW</a>
             </div>
             <div class="about-col">
-                <img src="image/about.jfif" class="slideshow-image">
+                <img src="image/about.jpg" class="slideshow-image" alt="Mzamomtsha Primary School learners">
             </div>
         </div>
     </section>
@@ -76,7 +76,7 @@
             navLinks.style.right = "0";
         }
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            navLinks.style.right = "-280px";
         }
 
         
@@ -84,3 +84,4 @@
     </script>
 </body>
 </html>
+

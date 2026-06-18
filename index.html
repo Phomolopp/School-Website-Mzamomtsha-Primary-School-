@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Mzamomtsha Primary School</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="image/logo.png" width="70" height="100"></a>
-            <div class="nav-links" id ="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <a href="index.html"><img src="image/logo.png" width="70" height="100" alt="Mzamomtsha Primary School logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-label="Close menu">&times;</i>
                 <ul>
                     <li><a href="index.html" style="color: rgb(252, 16, 8);">HOME</a></li>
                     <li><a href="about.html" style="color: white;">ABOUT US</a></li>
@@ -24,132 +24,166 @@
                     <li><a href="contact.html" style="color: white;">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" aria-label="Open menu">&#9776;</i>
         </nav>
-<div class="text-box">
-    <h1>Mzamomtsha Primary School</h1>
-    <p>Rise and Shine Together</p>
-    <a href="apply.html" class="hero-btn">APPLY HERE</a>
-</div>    
+
+        <div class="text-box">
+            <span class="eyebrow">Drift Sands, Western Cape</span>
+            <h1>Mzamomtsha Primary School</h1>
+            <p>Rise and Shine Together through confident learning, caring teachers, and opportunities that prepare every learner for the future.</p>
+            <div class="hero-actions">
+                <a href="apply.html" class="hero-btn">APPLY HERE</a>
+                <a href="about.html" class="hero-btn ghost-btn">ABOUT THE SCHOOL</a>
+            </div>
+        </div>
     </section>
 
-<!-----------COURSE-->
-
-
-
-<!---------campus----------->
-
-
-
-<section class="campus">
-
-<h1>Meet Our Dedicated Educators</h1>
-<p>Unlock Your Potential with Our Diverse Subjects!</p>
-
-<div class="row">
-    
-    <div class="campus-col">
-        <img src="image/principal.png">
-        <div class="layer"> 
-            <h3>Principal<br><p>MR Simphiwe Khuze</p></h3>
+    <section class="stats-panel" aria-label="School highlights">
+        <div>
+            <strong>700+</strong>
+            <span>Learners supported</span>
         </div>
-    </div>
-    <div class="campus-col">
-        <img src="image/deputy1.jpg" height="100%">
-        <div class="layer"> 
-            <h3>Deputy Principal<br><p>MRS Thandiwe Lamani</p></h3>
+        <div>
+            <strong>20</strong>
+            <span>Dedicated teachers</span>
         </div>
-    </div>
-    <div class="campus-col">
-        <img src="image/hod.jpg" height="100%">
-        <div class="layer"> 
-            <h3>Head Of Department<br><p>MR Justice Mthimkhulu</p></h3>
+        <div>
+            <strong>1-12</strong>
+            <span>Grades offered</span>
         </div>
-    </div>
-
-
-</section>
-<!--------Facilities-->
-
-
-
-<!---------testimonials-->
-<section class="testimonials">
-
-    <h1>What Our Students Says</h1>
-    <p>Hear directly from our students about their experiences at Mzamomtsha Primary School.
-
-    </p>
-
-    <div class ="row">
-    <div class="testimonials-col">
-            <img src="image/girl.jpg" width="70" height="70">
-            <div><p>Mzamomtsha Primary has been my second home for years. From the engaging lessons to the supportive teachers,
-                 every day is filled with excitement and learning. I'm grateful for the opportunities this school has given me 
-                 to grow academically and personally.</p>
-                <h3>Lindiwe M. (Grade 7)</h3>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-
-             </div>
+        <div>
+            <strong>2007</strong>
+            <span>Current leadership since</span>
         </div>
-        <div class="testimonials-col" width="70" height="70">
-            <img src="image/boy.jpg">
-            <div><p>I never thought school could be this fun! At Mzamomtsha Primary, I've discovered my
-                 love for science through exciting experiments in the lab. The teachers here are amazing;
-                  they always encourage us to reach for the stars. I can't wait to see what the future holds!</p>
-                <h3>Thabo S. (Grade 6)</h3>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+    </section>
+
+    <section class="modern-section">
+        <div class="section-heading">
+            <span class="eyebrow">Learning that feels supported</span>
+            <h2>A school experience built around growth, care, and opportunity.</h2>
+            <p>We combine classroom discipline with practical support, community involvement, and activities that help learners build confidence beyond marks alone.</p>
         </div>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <i class="fa fa-book"></i>
+                <h3>Strong Foundations</h3>
+                <p>Focused literacy, numeracy, science, and life skills help learners progress with confidence through each grade.</p>
+            </article>
+            <article class="feature-card">
+                <i class="fa fa-cutlery"></i>
+                <h3>Daily Care</h3>
+                <p>Our feeding scheme and teacher support help learners arrive ready to participate, learn, and belong.</p>
+            </article>
+            <article class="feature-card">
+                <i class="fa fa-trophy"></i>
+                <h3>Celebrated Achievement</h3>
+                <p>Prize giving, top learner recognition, and school events create visible goals for learners to work toward.</p>
+            </article>
         </div>
-    </div>
+    </section>
 
+    <section class="program-band">
+        <div>
+            <span class="eyebrow">Beyond the classroom</span>
+            <h2>Facilities and activities that keep learners engaged.</h2>
+        </div>
+        <div class="program-grid">
+            <article>
+                <img src="image/library.png" alt="School library">
+                <h3>Library Access</h3>
+            </article>
+            <article>
+                <img src="image/cafeteria.png" alt="School cafeteria">
+                <h3>Nutrition Support</h3>
+            </article>
+            <article>
+                <img src="image/basketball.png" alt="Learners playing basketball">
+                <h3>Sports Development</h3>
+            </article>
+        </div>
+    </section>
 
+    <section class="campus">
+        <h1>Meet Our Dedicated Educators</h1>
+        <p>Unlock your potential with our diverse subjects and committed leadership team.</p>
 
-</section>
+        <div class="row">
+            <div class="campus-col">
+                <img src="image/principal.png" alt="Principal Mr Simphiwe Khuze">
+                <div class="layer">
+                    <h3>Principal<br><p>MR Simphiwe Khuze</p></h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/deputy1.jpg" alt="Deputy Principal Mrs Thandiwe Lamani">
+                <div class="layer">
+                    <h3>Deputy Principal<br><p>MRS Thandiwe Lamani</p></h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/hod.jpg" alt="Head of Department Mr Justice Mthimkhulu">
+                <div class="layer">
+                    <h3>Head Of Department<br><p>MR Justice Mthimkhulu</p></h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Hear directly from our students about their experiences at Mzamomtsha Primary School.</p>
 
-<section class="cta"> 
-    <h1>Reach out to us directly for any inquiries or assistance</h1>
-    <a href="contact.html" class="hero-btn">CONTACT US</a>
-</section>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="image/user1.jpg" width="70" height="70" alt="Lindiwe M">
+                <div>
+                    <p>Mzamomtsha Primary has been my second home for years. From the engaging lessons to the supportive teachers, every day is filled with excitement and learning.</p>
+                    <h3>Lindiwe M. (Grade 7)</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="image/user2.jpg" width="70" height="70" alt="Thabo S">
+                <div>
+                    <p>I never thought school could be this fun. At Mzamomtsha Primary, I discovered my love for science through exciting experiments and encouraging teachers.</p>
+                    <h3>Thabo S. (Grade 6)</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="cta">
+        <h1>Reach out to us directly for any inquiries or assistance</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
 
-<!---------footer-->
-
-<section class="footer">
-
-    
+    <section class="footer">
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-whatsapp"></i>
         </div>
-        <p>Made with <i class="fa fa-heart-o "></i> by Code Busters</p>
+        <p>Made with <i class="fa fa-heart-o"></i> by Code Busters</p>
+    </section>
 
-</section>
-
-<!-------about us -->
-
-
-<!----------JavaScript for Tpggle Menu---------->
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    }
-</script>
-
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-280px";
+        }
+    </script>
 </body>
 </html>
